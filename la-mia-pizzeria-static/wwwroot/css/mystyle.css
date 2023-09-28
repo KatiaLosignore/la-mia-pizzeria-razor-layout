@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: rgb(247,172,78);
+    background-color: lightgray;
 }
 
 
 h1 {
-    color: yellow;
+    color: blue;
 }
 
 main img {
@@ -26,7 +26,11 @@ ul li {
 footer {
     background-color: gray;
     color: white;
-    height: 120px;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 footer img {
