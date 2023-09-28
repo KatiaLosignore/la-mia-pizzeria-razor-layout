@@ -9,8 +9,9 @@ body {
     background-color: rgb(247,172,78);
 }
 
+
 h1 {
-    color: red;
+    color: yellow;
 }
 
 main img {
@@ -25,6 +26,7 @@ ul li {
 footer {
     background-color: gray;
     color: white;
+    height: 120px;
 }
 
 footer img {
