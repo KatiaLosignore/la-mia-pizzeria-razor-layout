@@ -110,5 +110,18 @@
 
     <hr />
 
+    <p>
+        <strong>
+            5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
+        </strong>
+    </p>
+
+    @{
+        DateTime dataAttuale = DateTime.Now;
+    }
+
+    <p>La data attuale é: @dataAttuale.ToString("dd/MM/yyyy HH:mm:ss")</p>
+
+    <hr />
 
 </body>
