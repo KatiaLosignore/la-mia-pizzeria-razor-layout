@@ -24,7 +24,7 @@
         string cognome = "Losignore";
     }
 
-    <h2>@nome @cognome</h2>
+    <h2>Nome e cognome: @nome @cognome</h2>
     
     <hr />
 
@@ -49,13 +49,13 @@
         }
     }
 
-    <span>La somma dei numeri è: @Somma(10)</span>
+    <span>La somma dei numeri da 1 a 10 è: @Somma(10)</span>
     
     <hr />
 
     <p>
         <strong>
-            Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina.
+            3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina.
         </strong>
     </p>
 
@@ -80,6 +80,33 @@
     }
 
     <p>Nella frase "@frase" , la lettera "@lettera" è presente: @ContaLettere(frase, lettera) volte.</p>
+
+    <hr />
+
+    <p>
+        <strong>
+            4. Creare una List<int> di 20 numeri interi (generati random da 1 a 90, 1 e 90 inclusi) e mostrare in pagina solo i numeri compresi tra 20 e 70
+        </strong>
+    </p>
+
+    @{
+        List<int> interi = new List<int>();
+        Random random = new Random();
+
+        for (int i = 0; i < 20; i++)
+        {
+            int numeroRandom = random.Next(1, 91);
+            interi.Add(numeroRandom);
+        }
+    }
+
+    @foreach (int numeroStampa in interi)
+    {
+        @if (numeroStampa >= 20 && numeroStampa <= 70)
+        {
+            <span>@numeroStampa</span>
+        }
+    }
 
     <hr />
 
