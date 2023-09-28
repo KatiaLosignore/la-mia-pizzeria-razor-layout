@@ -27,4 +27,27 @@
     <h2>@nome @cognome</h2>
 
 
+    <p>
+        <strong>
+            2. Creare una funzione che stampa la somma dei numeri che vanno da 1 a n (con n passato come parametro - n incluso)
+            Stampare dentro uno span il risultato.
+        </strong>
+    </p>
+
+    @{
+        int Somma(int n)
+        {
+            int somma = 0;
+
+            for (int i = 1; i <= n; i++)
+            {
+                somma += i;
+            }
+
+            return somma;
+        }
+    }
+
+    <span>La somma dei numeri è: @Somma(10)</span>
+
 </body>
