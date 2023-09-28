@@ -124,4 +124,30 @@
 
     <hr />
 
+    <p>
+        <strong>
+            6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina:
+        </strong>
+        <div>
+            <b>a. la data di 7 giorni fa</b>
+        </div>
+    </p>
+
+    <div>@dataAttuale.AddDays(-7).ToString("dd/MM/yyyy").</div>
+
+    <div class="my-2">
+        <b>b. che giorno della settimana è oggi (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)</b>
+    </div>
+
+    <div>@dataAttuale.ToString("dddd").</div>
+
+    <div class="my-2">
+        <b>c. che giorno della settimana sarà nello stesso giorno e mese di oggi ma tra un anno (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)</b>
+    </div>
+
+    <div>@dataAttuale.AddYears(1).ToString("dddd").</div>
+
+    <hr />
+
+
 </body>
