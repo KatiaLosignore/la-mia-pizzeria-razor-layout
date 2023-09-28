@@ -25,7 +25,8 @@
     }
 
     <h2>@nome @cognome</h2>
-
+    
+    <hr />
 
     <p>
         <strong>
@@ -49,5 +50,38 @@
     }
 
     <span>La somma dei numeri è: @Somma(10)</span>
+    
+    <hr />
+
+    <p>
+        <strong>
+            Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina.
+        </strong>
+    </p>
+
+    @{
+        string frase = "nel mezzo del cammin di nostra vita";
+        char lettera = 'a';
+
+        int ContaLettere(string testo, char lettera)
+        {
+            int count = 0;
+
+            foreach(char carattere in testo) 
+            {
+                if (carattere == lettera)
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+    }
+
+    <p>Nella frase "@frase" , la lettera "@lettera" è presente: @ContaLettere(frase, lettera) volte.</p>
+
+    <hr />
+
 
 </body>
